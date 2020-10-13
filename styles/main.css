@@ -488,6 +488,70 @@ img {
   line-height: 1.57;
 }
 
+/* article */
+
+.article {
+  margin-top: 202px;
+  position: relative;
+  df
+}
+
+.article::before {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.6;
+  content: "";
+  background: url("../img/element.png") right center no-repeat;
+  z-index: -1;
+  
+}
+
+.article__top {
+  max-width: 950px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.article__list {
+  gap: 37px 17px;
+  margin-top: 72px;
+}
+
+.article__button {
+  margin-top: 69px;
+  margin-bottom: 200px;
+  text-align: center;
+}
+
+.card-article__link {
+  display: block;
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 1.65;
+  color: #4089ED;
+  text-decoration: none;
+  margin-top: 25px;
+  margin-bottom: 35px;
+}
+
+/* Article link */
+
+.card-article__link::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 14px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: url("../img/arrow_forward.svg");
+}
+
 /**
 
   Card
@@ -512,11 +576,24 @@ img {
   margin-top: 22px;
 }
 
+.card__title--article {
+  color: #000;
+  font-size: 21px;
+  line-height: 1.52;
+  font-weight: 700;
+  margin-top: 210px;
+}
+
 .card__description {
   color: #7d7987;
   font-size: 16px;
   line-height: 1.75;
   font-weight: 300;
+}
+
+.card__description--article {
+  margin-top: 12px;
+  width: 250px;
 }
 
 .card__icon {
@@ -529,12 +606,32 @@ img {
   background-repeat: no-repeat;
 }
 
+.card-article__img {
+  
+  display: inline-block;
+  background-size: contain;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
 .card__icon--search {
   background-image: url("../img/search.svg");
 }
 
 .card__icon--pharmacy {
   background-image: url("../img/pharmacy.svg");
+}
+
+.card-article__img-injection{
+  background-image: url("../img/injection.jpg");
+}
+
+.card-article__img-micro{
+  background-image: url("../img/micro.jpg");
+}
+
+.card-article__img-masc{
+  background-image: url("../img/masc.jpg");
 }
 
 /**
